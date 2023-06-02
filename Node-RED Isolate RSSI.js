@@ -1,3 +1,11 @@
+/****************************************************************************************************
+* The following code was used in a Node-RED function node in order to isolate the RSSI signals of   * 
+* the four ESP32 Bluetooth beacons by searching through their raw strings and isolating the         *
+* signal strength value. The advertised devices were isolated by simply searching for the first two * 
+* characters of each ESP32’s address. One could have typed in the whole addresses but this was      *
+* unnecessary.                                                                                      *
+*****************************************************************************************************/
+
 var sLength = msg.payload.length;
 for (var i = 0; i < sLength; i++) {
   if (
