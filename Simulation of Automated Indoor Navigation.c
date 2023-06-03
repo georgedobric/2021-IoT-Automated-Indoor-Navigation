@@ -1,3 +1,21 @@
+/*****************************************************************************************************
+* The automated indoor navigation was designed to operate within an area with four destination       *           
+* zones, six tables, and an isle of longitudinal transportation.                                     *
+*                                                                                                    *
+* The following code was developed to simulate automated indoor navigation. The purpose of           *
+* this development was to prepare the navigation code so that once the RSSI signal collection        *
+* from four of the ESP32 Bluetooth beacons was complete and ready, the signal collection could       *
+* be easily fitted into this code which would result in time saved for the team. The code has four   *
+* blocks, each of which is dedicated to each zone, allowing for longitudinal, lateral, and diagonal  * 
+* transportation. The simulation code uses a mapping of a ten-by-ten system, with zone A being       *
+* referred to by the coordinates (2,2), zone B by (8, 2), zone C by (2, 8), and zone D by (8,8). The *
+* variables assigned form lines 6 to 13 of the code were not used, however this is where the RSSI    *
+* signal collection would be assigned. The collected signals could be mapped out to determine x      *
+* and y values for an obtained signal, this would require several measurements to be done and        *
+* recorded in order to determine the x and y correlation with a single signal.                       *
+*****************************************************************************************************/
+
+
 /*  A       B
 
 
